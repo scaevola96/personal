@@ -1,0 +1,285 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% -*- coding: UTF-8; -*-
+% vim: set fenc=utf-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% CV.tex
+%% <https://github.com/zachscrivena/simple-resume-cv>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% See "README.md" for instructions on compiling this document.
+
+\documentclass[letterpaper,MMMyyyy,nonstopmode]{simpleresumecv}
+% Class options:
+% a4paper, letterpaper, nonstopmode, draftmode
+% MMMyyyy, ddMMMyyyy, MMMMyyyy, ddMMMMyyyy, yyyyMMdd, yyyyMM, yyyy
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% CV Info (to be customized).
+\newcommand{\CVAuthor}{Sergey Barseghyan}
+\newcommand{\CVTitle}{SergeyBarseghyanCV}
+\newcommand{\CVNote}{CV compiled on {\today} for Goldman Sachs}
+\newcommand{\CVWebpage}{https://scaevola96.github.io}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+pdfsubject={\CVWebpage},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+unicode=true,
+bookmarks=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+% Shorthand.
+\newcommand{\Code}[1]{\mbox{\textbf{#1}}}
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\Title{\CVAuthor}
+
+\begin{SubTitle}
+\href{https://www.google.ru/maps/place/Obshchezhitiye+12+Mfti/@55.9315626,37.5187193,15z/data=!4m5!3m4!1s0x0:0xb7d115fb010a41ba!8m2!3d55.9315626!4d37.5187193}
+{Institutsky lane 6A, Apt 1101, Dolgoprudny, Moscow Region 141701, Russia}
+\par
+\href{mailto:barseghyan@phystech.edu}
+{barseghyan@phystech.edu}
+\SubBulletSymbol \,
+\href{mailto:sergey.barseghyan06@gmail.com}
+{sergey.barseghyan06@gmail.com}
+\,\SubBulletSymbol\,
++7\,(916)\,511-99-96
+\,\SubBulletSymbol\,
+\href{\CVWebpage}
+{\url{\CVWebpage}}
+\end{SubTitle}
+
+\begin{Body}
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Education}
+{Education}
+{PDF:Education}
+
+\Entry
+\href{http://www.mipt.ru}
+{\textbf{Moscow Institute of Physics and Technology}},
+Dolgoprudny, Russia
+
+\Gap
+\BulletItem
+B.S. in
+\href{https://mipt.ru/education/departments/lpr/}
+{Applied Math and Physics} \textit{(Phystech School of Fundamental and Applied Physics )} 
+\SubBulletItem Relevant Coursework: Computational Methods of Theoretical and Experimental Physics, Probability, Partial Differential Equations. 
+
+
+\BigGap
+\Entry
+\href{http://www.example.com/my-college}
+{\textbf{Ayb High School}},
+Yerevan, Armenia
+
+%\begin{Detail}
+%	\SubBulletItem
+%	Cumulative GPA: 3.9 / 4.0
+%s\end{Detail}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% RESEARCH EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Research Experience}
+{Research Experience}
+{PDF:ResearchExperience}
+
+\Entry
+\href{http://www.example.com/my-institute}
+{\textbf{Laboratory of High Energy Physics}},
+MIPT
+\Gap
+\BulletItem
+Undergraduate Research Student, Theoretical Department
+\hfill
+\begin{Detail}
+\SubBulletItem
+Supervisor:
+Prof. Emil T. Akhmedov
+\SubBulletItem
+Focus:
+Quantum Field Theory in curved space-time .
+\end{Detail}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% OTHER WORK EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Work\newline
+	Experience}
+{Work Experience}
+{PDF:OtherWorkExperience}
+
+\Entry
+{\textbf{ThunderBid Trading Limited}}, Moscow, Russia
+\Gap
+\BulletItem
+Quantitative Researcher
+\hfill
+\DatestampYMD{2019}{07}{15} -- Present
+\begin{Detail}
+	\SubBulletItem
+	Developed and modified HFT algorithm that increased company's returns by 10\%
+\end{Detail}
+\Entry
+{\textbf{Private Tutor}}, Moscow, Russia \hfill \DatestampYMD{2017}{03}{} -- Present
+\begin{Detail}
+	\SubBulletItem
+	Mathematical Analysis, General Physics, Theoretical Mechanics, Probability, Machine Learning
+	\SubBulletItem
+	Besides teaching to bachelor and high school students I have been consulting specialists in matters of physics and mathematics for their projects
+		
+\end{Detail}
+{\textbf{Laboratory of High Energy Physics}}, MIPT
+\Gap
+\BulletItem
+Research Technician
+\hfill
+\DatestampYMD{2017}{07}{15} -- Present
+\SubBulletItem
+	Reporting on seminars and schools, editing problem book on mathematical methods of quantum field theory
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% AWARDS & SCHOLARSHIPS %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Awards\newline}
+{Awards}
+{PDF:Awards}
+\BulletItem Trinity College Firefighting Robot Competition (top 5 out of 200
+competitors and prize for best design) Hartford, Connecticut, USA \hfill \DatestampYMD{2013}{04}{}
+\BulletItem Armrobotics Linetracking robot competition  (First Prize) \hfill \DatestampYMD{2012}{11}{}
+\BulletItem McKinsey Biggame Case Championship (2nd Place) \hfill \DatestampYMD{2017}{11}{}
+\BulletItem Double Champion in Powerlifting among univesity students in Moscow  \hfill \DatestampYMD{2018}{0}{0} \&\DatestampYMD{2019}{0}{0}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%Scientific activity   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\Section
+{Scientific\newline
+Activity}
+{Scientific Activity (For PDF Bookmark)}
+{PDF:ThisIsASectionWithUsageNotes:ForPDFLink}
+
+\Entry 
+\BulletItem
+Regular reporter on scientific seminar on gauge theories and strings  \hfill\DatestampYMD{2018}{09}{} -- Present
+\BulletItem
+Lecturer on the school "Algebraic and Geometric Methods in Mathematical Physics", \hfill \DatestampYMD{2017}{09}{}
+\BulletItem 
+Scientific Secretary on International School of Subnuclear Physics, Erice, Sicily, Italy  \hfill \DatestampYMD{2017}{06}{}
+
+\Section
+{Schools \& \newline
+	Conferences}
+{Scientific Activity (For PDF Bookmark)}
+{PDF:ThisIsASectionWithUsageNotes:ForPDFLink}
+\Entry
+
+\BulletItem Wolfram Summer School Armenia 2016, \hspace{5pt} Wolfram Research
+\BulletItem International School “Advanced Methods of Modern  Theoretical
+Physics: \\Integrable and Stochastic Systems” \hspace{5pt}  Dubna, Russia
+\BulletItem "String theory, integrable models and representation theory 2019" \hspace{5pt} Skoltech, Moscow
+
+%%%%%%%%%%%%%%%
+%% LANGUAGES %%
+%%%%%%%%%%%%%%%
+\Section
+{Online\newline
+	Courses}
+{This is a Section With Usage Notes (For PDF Bookmark)}
+{PDF:ThisIsASectionWithUsageNotes:ForPDFLink}
+\Entry
+\BulletItem Coursera: Art of C++ Development: White Belt from Yandex and MIPT
+\BulletItem Coursera: Machine Learning and Data Analysis: Supervised Learning from Yandex and MIPT
+\BulletItem Coursera: Machine Learning and Data Analysis: Mathematics and Python from Yandex and MIPT
+\BulletItem Stepik: Programming on Python from Bioinformatics Institute
+\BulletItem Stepik: Investment Banking from Inside from European University at St. Petersburg
+\BulletItem Stepik: Introduction to Linux from Bioinformatics Institute
+
+\Section
+{Languages}
+{Languages}
+{PDF:Languages}
+
+\BulletItem
+English: Fluent.
+
+\BulletItem
+Russian: Native.
+
+
+\BulletItem
+Armenian: Native.
+
+
+%%%%%%%%%%%%
+%% SKILLS %%
+%%%%%%%%%%%%
+
+\Section
+{Technical Skills}
+{Technical Skills}
+{PDF:Skills}
+
+\Entry
+{\TeX}, {\LaTeX},
+Mathematica,
+R, Python, C, C++, SQL, Numerical Methods, Fortran, Linux
+
+
+%%%%%%%%%%%%%%%
+%% INTERESTS %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Interests}
+{Interests}
+{PDF:Interests}
+
+\Entry
+Judo, Chess.
+%%%%%%%%%%%
+\end{Body}
+\end{document}
